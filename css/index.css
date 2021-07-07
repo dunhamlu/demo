@@ -1,0 +1,90 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+.distance {
+  padding: 0;
+  margin: 0;
+}
+.bg {
+  background-size: 100% 100%;
+}
+.flex {
+  -webkit-box-flex: 1;
+}
+html {
+  font-size: 62.5%;
+}
+body,
+html,
+#wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+#wrap #head #top {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #f8f8f8;
+  border-bottom: 1px solid #cccc;
+  box-shadow: 0px -5px 10px 0px #aaaaaa;
+}
+#wrap #shows {
+  -webkit-box-flex: 1;
+  position: relative;
+}
+#wrap #shows > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: translateX(100%);
+  background: #ccc;
+  -webkit-transition: transform 1s;
+}
+#wrap #shows > div:nth-of-type(1) {
+  -webkit-transform: translateX(0);
+}
+#wrap #foot {
+  height: 4rem;
+  background: #f8f8f8;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+#wrap #foot a {
+  display: block;
+  width: 25%;
+  text-align: center;
+}
+#wrap #foot a span {
+  font-size: 2rem;
+  color: #ccc;
+  margin-left: .5rem;
+  margin-bottom: .5rem;
+}
+#wrap #foot a b {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+#wrap #foot a.on span,
+#wrap #foot a.on b {
+  color: #FF4978;
+}
